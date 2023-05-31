@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+ 
+
+header {
+	z-index: 1000;
+}
+
+h2  {
+	font-size:  2.5vw;
+	text-shadow: 3px 3px #000c49;
+	
+}
+
+h4  {
+	font-size: 1.3vw;
+	text-shadow: 2px 2px #000c49;
+	
+}
+
+#smdevices_content {
+	height: 18rem;
+	overflow: hidden;
+	
+}
+
+
+/* ------------------responsive-----------------------*/
+
+@media (max-width: 576px) {
+#smdevices_content {
+	height: 20rem;
+	
+}
+}
+@media (max-width: 450px) {
+#smdevices_content {
+	height: 25rem;
+	
+}
+}
+@media (max-width: 325px) {
+#smdevices_content {
+	height: 30rem;
+	
+}
+}
