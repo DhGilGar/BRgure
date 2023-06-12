@@ -1,10 +1,3 @@
-.designation a {
-  color: #fff;
-}
-
-.designation a:hover {
-  color: #00a0df;
-}
 
 
 a {
@@ -25,7 +18,7 @@ a {
     letter-spacing: 1px;
 }
  h2 {
-    color: #fff;
+
     letter-spacing: 1px;
 }
 
@@ -56,7 +49,7 @@ a {
 }
 
 #bloque2 {
-    background: linear-gradient(to bottom, #033b4f, #035f86);
+    background: #eeeeee;
     margin-bottom: 3rem;
 }
 
@@ -159,7 +152,7 @@ border-bottom: 1px solid #999; */
     }
     
     .carousel-item .logo-container img {
-      max-width: 150px;
+      max-width: 130px;
       height: auto;
       margin: 0;
     }
@@ -170,9 +163,8 @@ border-bottom: 1px solid #999; */
  
 
  .carousel-indicators {
-    bottom: -40px; /* Ajusta el valor según sea necesario */
+    bottom: -45px;
   }
-
 
 
 
