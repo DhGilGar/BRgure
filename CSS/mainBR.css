@@ -1,3 +1,52 @@
+/* video */
+.video-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 56.25%; /* Proporción de aspecto 16:9 (dividir la altura por el ancho y multiplicar por 100) */
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.video-container .video-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.transparent-button {
+  background-color: transparent;
+  border: none;
+}
+
+.transparent-button:hover {
+  background-color: transparent;
+  opacity: 0.8;
+}
+
+.fixed-video-button {
+  position: absolute;
+  top: 80%; /* Ajusta la posición vertical del botón */
+  left: 50%; /* Ajusta la posición horizontal del botón */
+  transform: translate(-50%, -50%); /* Centra el botón */
+}
+/* barra navegacion */
+
+#barra_navegacion {
+  z-index: 3;
+}
 
 
 a {
@@ -7,20 +56,43 @@ a {
 
 
  a:hover {
- color: #00a0df;
-
-	
+ color: #00a0df;	
 } 
+
+/* textos*/
+
+#titulo_index {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#subtitulo_index {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 
 
  h1 {
     letter-spacing: 1px;
+    color: #035f86;
 }
  h2 {
-
     letter-spacing: 1px;
+    color: #00a0df;
 }
+
+
+h3 {
+  letter-spacing: 1px;
+  color: #00a0df;
+}
+
 
 .icon-head {
     width: 7rem;
@@ -40,6 +112,14 @@ a {
 	margin-right: 1rem;
 }
 
+/* Bloque_color_gris */
+.bloque2 {
+  background: #eeeeee;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
 /* Clientes */
 * {
     margin: 0;
@@ -47,12 +127,6 @@ a {
     box-sizing: border-box;
     font-family: 'Verdana', sans-serif;
 }
-
-#bloque2 {
-    background: #eeeeee;
-    margin-bottom: 3rem;
-}
-
 
 .card {
     
@@ -143,6 +217,9 @@ border-bottom: 1px solid #999; */
   margin-top: 8px;
 }
 
+
+/* Carrusel */
+
     .carousel-item .logo-container {
       display: flex;
       justify-content: center;
@@ -193,7 +270,34 @@ border-bottom: 1px solid #999; */
   .position-sm-sticky {
     position: sticky !important;
   }
+
+  
+
 }
+
+@media (max-width: 660px) {
+
+#titulo_index {
+
+  font-size: 15px;
+
+}
+
+#subtitulo_index {
+  color: white;
+  font-size:10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.video-container .video-text {
+  
+  padding: 10px;
+ 
+}
+}
+
+
 @media (min-width: 768px) {
   .position-md-static {
     position: static !important;
