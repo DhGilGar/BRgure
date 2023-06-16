@@ -2,65 +2,100 @@
 <html lang="pt">
 <head>
 <meta charset="utf-8">
-<title>#</title>
+<title>Controle controle de jornada via app</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="Description" content="#"/>
-	<meta name="Keywords" content="Policia, DSRC"/>
- 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
- 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
- 	<link href="CSS/mainBR.css" rel="stylesheet" type="text/css">
- 	
+	<meta name="robots" content="index, follow">
+	<meta name="Description" content="Empresa multinacional com ampla experiência na Lei do Motorista (13.103/2015) e na CLT. Serviços jurídicos especializados para o setor de transportes, incluindo monitoramento do tempo de trabalho por meio de tacógrafos on-line, gerenciamento de tacógrafos, leitura de discos e Fitas com o Tacho Manager, monitoramento do tempo de trabalho por meio de aplicativo móvel, gerenciamento de frotas e serviços de computação em nuvem.  Oferecemos também o Gurecard, cartões pré-pagos com gerenciamento on-line."/>
+	<meta name="Keywords" content="Lei do Motorista, CLT, serviços jurídicos, setor de transportes, monitoramento do tempo de trabalho, tacógrafos on-line, gerenciamento de tacógrafos, Tacho Manager, leitura de discos, leitura de fitas, aplicativo móvel, gerenciamento de frotas, serviços de computação em nuvem, Gurecard, cartões pré-pagos, gerenciamento on-line""/>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	<link href="CSS/mainBR.css" rel="stylesheet" type="text/css">			
+		
 </head>
 
 <body class="d-flex flex-column h-100 bg-white">
 <a name="arriba"></a>	
+
+
+
 <header>
  
-<!-- Navbar -->
-<a class="navbar-brand d-flex flex-row position-md-absolute justify-content-center justify-content-md-start"  style="z-index:3" href="index.html"><img src="Imagen/logoGuretruck_home.png"  alt=""/></a>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<!-- Navbar -->
+	<a class="navbar-brand d-flex flex-row position-md-absolute justify-content-center justify-content-md-start" id="barra_navegacion" href="index.html">
+		<img src="Imagen/logoGuretruck_home.png" alt="Guretruck logotipo" />
+	</a>
 	
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
 		<div class="container-fluid">
-		
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse justify-content-center" id="main_nav">
-		  <ul class="navbar-nav">
-			<li class="nav-item active"> <a class="nav-link" href="index.html">HOME </a> </li>
-			 
-			 
-			  
-					 
-			  
+			<ul class="navbar-nav">
+			<li class="nav-item active">
+				<a class="nav-link" href="index.html">HOME</a>
+			</li>
 			<li class="nav-item dropdown myDropdown">
-			  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">NOSSOS SERVIÇOS</a>
-			  <ul class="dropdown-menu dropdown-menu-dark">
-				<li> <a class="dropdown-item" href="Jornada_trabalho.html"><img src="Imagen/icon_nav_jornada.svg" class="icon-nav" alt=""/> JORNADA DE TRABALHO </a></li>
-				<li><a class="dropdown-item" href="Legal.html"><img src="Imagen/icon_nav_legal.svg" class="icon-nav" alt=""/>SERVIÇOS JURÍDICOS </a></li>
-				<li><a class="dropdown-item" href="Gurecard.html"><img src="Imagen/icon_nav_gurecard.svg" class="icon-nav" alt=""/> GURECARD </a></li>
-				<li><a class="dropdown-item" href="gestaotaco.html"><img src="Imagen/icon_nav_taco.svg" class="icon-nav" alt=""/> GESTÃO DE TACÓGRAFOS </a></li>
-				<li> <a class="dropdown-item" href="jornadaapp.html"><img src="Imagen/icon_nav_app.svg" class="icon-nav" alt=""/> CONTROLE DE JORNADA VIA APP </a></li>
-				<li> <a class="dropdown-item" href="gestaofrotas.html"><img src="Imagen/icon_nav_fleet.svg" class="icon-nav" alt=""/> GESTÃO DE FROTAS </a></li>
-				<li><a class="dropdown-item" href="posicionamiento.html"><img src="Imagen/icon_nav_gps.svg" class="icon-nav" alt=""/> POSICIONAMENTO </a></li>
-				<li><a class="dropdown-item" href="nube.html"><img src="Imagen/icon_nav_nube.svg" class="icon-nav" alt=""/> SERVIÇOS NA NUVEM </a></li>
-				
-			  </ul>
-			</li>			  
-			
-			<li class="nav-item"><a class="nav-link" href="sobrenosostros.html"> APRESENTAÇAO </a></li>
-			<li class="nav-item"><a class="nav-link" href="Contact.html"> CONTATO </a></li>
-		  </ul>
+				<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">NOSSOS SERVIÇOS</a>
+				<ul class="dropdown-menu dropdown-menu-dark">
+				<li>
+					<a class="dropdown-item" href="jornada_trabalho.html">
+					<img src="Imagen/icon_nav_jornada.svg" class="icon-nav" alt="Icono de Jornada de Trabalho" /> JORNADA DE TRABALHO
+					</a>
+				</li>
+				<li>
+					<a class="dropdown-item" href="legal.html">
+					<img src="Imagen/icon_nav_legal.svg" class="icon-nav" alt="Icono de Serviços Jurídicos" />SERVIÇOS JURÍDICOS
+					</a>
+				</li>
+				<li>
+					<a class="dropdown-item" href="gurecard.html">
+					<img src="Imagen/icon_nav_gurecard.svg" class="icon-nav" alt="Icono de Gurecard" /> GURECARD
+					</a>
+				</li>
+				<li>
+					<a class="dropdown-item" href="gestaotaco.html">
+					<img src="Imagen/icon_nav_taco.svg" class="icon-nav" alt="Icono de Gestão de Tacógrafos" /> GESTÃO DE TACÓGRAFOS
+					</a>
+				</li>
+				<li>
+					<a class="dropdown-item" href="jornadaapp.html">
+					<img src="Imagen/icon_nav_app.svg" class="icon-nav" alt="Icono de Controle de Jornada via App" /> CONTROLE DE JORNADA VIA APP
+					</a>
+				</li>
+				<li>
+					<a class="dropdown-item" href="gestaofrotas.html">
+					<img src="Imagen/icon_nav_fleet.svg" class="icon-nav" alt="Icono de Gestão de Frotas" /> GESTÃO DE FROTAS
+					</a>
+				</li>
+				<li>
+			<a class="dropdown-item" href="posicionamiento.html">
+					<img src="Imagen/icon_nav_gps.svg" class="icon-nav" alt="Icono de Posicionamento" /> POSICIONAMENTO
+					</a>
+				</li>
+				<li>
+					<a class="dropdown-item" href="nube.html">
+					<img src="Imagen/icon_nav_nube.svg" class="icon-nav" alt="Icono de Serviços na Nuvem" /> SERVIÇOS NA NUVEM
+					</a>
+				</li>
+				</ul>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="sobrenosostros.html">APRESENTAÇAO</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="Contact.html">CONTATO</a>
+			</li>
+			</ul>
 		</div>
 		<!-- navbar-collapse.// -->
 		</div>
 		<!-- container-fluid.// -->
-</nav>
-
-
-
+	</nav>
 
 </header>
+
+
 <!-- Begin page content -->
 <a name="arriba"></a>
 <main class="flex-shrink-0">
@@ -73,7 +108,7 @@
 				  <img src="Imagen/Icon_head_jornadaapp.svg" class="icon-head " alt="Icon Head">
 			</div>	
 
-	<h1 class="fs-2 fw-bold text-center col-12 mb-4" style="color: #035f86">CONTROLE CONTROLE DE JORNADA VIA APP</h1>
+			<h1 class="fs-2 fw-bold text-center col-12 mb-4 text-uppercase" id="titulos_principales">CONTROLE CONTROLE DE JORNADA VIA APP</h1>
 	
 		 
 	
@@ -82,138 +117,192 @@
 <!-- Servicio 1 GPS -->
 	
 	<div class="container ps-md-5 pe-md-5 ps-sm-2 pe-sm-2">
-	 	 <div class="row  mb-2 h-100">
+	 	 <div class="row mb-2 h-100">
 			
 			<div class="col-md-4 col-sm-12 mt-4 ps-md-4 pe-md-4">
-				
-				
-				<img src="Imagen/appgpspt.png" class=" w-100 d-block col-md mb-3" alt="World_Police">
-				
+				<img src="Imagen/appgpspt.png" class=" w-100 d-block col-md mb-3" alt="Telefone com o App Truck Controller">
 			</div>
 		
-			<div class="col-md-8 col-sm-12 mt-4  ps-md-4">
-				<h1 class="fs-5 fw-bold  pb-1 text-center text-md-start" style="color:#00a0df" >CONVERTA O SEU TELEFONE OU TABLET EM UM TACÓGRAFO E CONTROLE A JORNADA VIA APP</h1>
+			<div class="col-md-8 col-sm-12 mt-4 ps-md-4">
+				<h3 class="fs-5 fw-bold  pb-1 text-center text-md-start" style="color:#00a0df" >CONVERTA O SEU TELEFONE OU TABLET EM UM TACÓGRAFO E CONTROLE A JORNADA VIA APP</h3>
+					<ul class="list-unstyled">
+						<li class="d-flex align-items-start">
+							<span class="dot me-2"></span>
+							
+							<p>Relatórios personalizáveis do motorista, do veículo e dos salários.</p>
+							
+						</li>
+						<li class="d-flex align-items-start">
+							<span class="dot me-2"></span>
+							<p>Acesso em tempo real à condução diária, semanal, mensal e tempos de descanso.</p>
 
-					<p class="text-dark"><img src="Imagen/arrow.svg" class="icon-arrow me-3" alt="Arrow"/>Relatórios personalizáveis do motorista, do veículo e dos salários.</p>
-					<p class="text-dark"><img src="Imagen/arrow.svg" class="icon-arrow me-3" alt="Arrow"/>Acesso em tempo real à condução diária, semanal, mensal e tempos de descanso.</p>	
-					<p class="text-dark"><img src="Imagen/arrow.svg" class="icon-arrow me-3" alt="Arrow"/>Jornada 100% online;</p>
-					<p class="text-dark"><img src="Imagen/arrow.svg" class="icon-arrow me-3" alt="Arrow"/>Compatível com qualquer tipo de celular;</p>
-					<p class="text-dark"><img src="Imagen/arrow.svg" class="icon-arrow me-3" alt="Arrow"/>Documentação digitalizada do motorista e do veículo.</p>
-
-					<p class="text-dark"><img src="Imagen/arrow.svg" class="icon-arrow me-3" alt="Arrow"/>Gestão de cargas.</p>
-
-					<p class="text-dark"><img src="Imagen/arrow.svg" class="icon-arrow me-3" alt="Arrow"/>Gestão documental.</p>
-
-					<p class="text-dark"><img src="Imagen/arrow.svg" class="icon-arrow me-3" alt="Arrow"/>Chat Online.</p>
+						</li>
+						<li class="d-flex align-items-start">
+							<span class="dot me-2"></span>
+							<p>Jornada 100% online;</p>
+						</li>
+						<li class="d-flex align-items-start">
+							<span class="dot me-2"></span>
+							<p> Compatível com qualquer tipo de celular;</p>
+						</li>
+						<li class="d-flex align-items-start">
+							<span class="dot me-2"></span>
+							<p>Documentação digitalizada do motorista e do veículo.</p>
+						</li>
+						<li class="d-flex align-items-start">
+							<span class="dot me-2"></span>
+							<p>Gestão de cargas.</p>
+						</li>
+						<li class="d-flex align-items-start">
+							<span class="dot me-2"></span>
+							<p>Gestão documental.</p>
+						</li>
+						<li class="d-flex align-items-start">
+							<span class="dot me-2"></span>
+							<p>Chat Online.</p>
+						</li>
+					
+											
+					</ul>
+					
            </div>
     	</div>
   </div>		
 		
-<!-- borde -->
+
 	
-	<div class="container-flex border-bottom  col-md-12" style="border-bottom-color: #00a0df" ></div>	
-			
-	
-		<!-- Servicio 2 -->	
-  <div  class="container mt-5 flex-row justify-content-center align-content-center p-5 pt-3">
-		<div class="row col-12">
-			<h1 class="fs-2 fw-bold text-center pb-2 text-uppercase" style="color: #00a0df">Previsão de tendências e gráficos futuros</h1>
+	<!-- Servicio 2 -->	
+			<div class="container-flex mt-5 flex-row justify-content-center align-content-center pt-5 mb-5 bloque2">
+					<div class="row col-12">
+						<h2 class="fs-2 fw-bold text-center pb-2 text-uppercase">Previsão de tendências e gráficos futuros</h2>
 
-						<div class="col-md-4 col-sm-12 mt-4 ps-md-4 pe-md-4">
-				
-				
-				<img src="Imagen/graficos_futuros.png" class=" w-100 d-block col-md mb-3" alt="World_Police">
-				
-			</div>
-		
-			<div class="col-md-8 col-sm-12 mt-4  ps-md-4">
-				<h1 class="fs-5 fw-bold  pb-1 text-center text-md-start" style="color:#00a0df" >Planifique a rota dos seus motoristas 
-E evite gastos e multas desnecessárias.
-</h1>
-
-					<p class="text-dark"><img src="Imagen/arrow.svg" class="icon-arrow me-3" alt="Arrow"/>Análise do comportamento do motorista.
-</p>
-					<p class="text-dark"><img src="Imagen/arrow.svg" class="icon-arrow me-3" alt="Arrow"/>Distribuição do tempo de condução e descanso.
-</p>	
-					<p class="text-dark"><img src="Imagen/arrow.svg" class="icon-arrow me-3" alt="Arrow"/>Redução de custos.
-</p>
-					<p class="text-dark"><img src="Imagen/arrow.svg" class="icon-arrow me-3" alt="Arrow"/>esultados de desempenho.</p>
-					<p class="text-dark"><img src="Imagen/arrow.svg" class="icon-arrow me-3" alt="Arrow"/>Simulação para um ou dois motoristas.</p>
-
+									<div class="col-md-4 col-sm-12 mt-4  ps-md-4">
+										<img src="Imagen/graficos_futuros.png" class=" w-100 d-block col-md mb-3" alt="Captura de tela dos futuros gráficos no Truck Controller">
+									</div>
+									<div class="col-md-8 col-sm-12 mt-4  ps-md-4">
+										<h3 class="fs-5 fw-bold  text-uppercase text-center text-md-start">Planifique a rota dos seus motoristas e evite gastos e multas desnecessárias.</h3>
+										<ul class="list-unstyled">
+											<li class="d-flex align-items-start">
+												<span class="dot me-2"></span>
+												
+												<p>Análise do comportamento do motorista.</p>
+												
+											</li>
+											<li class="d-flex align-items-start">
+												<span class="dot me-2"></span>
+												<p>Distribuição do tempo de condução e descanso.</p>
 					
-           </div>
-           
-		</div>
-    </div>
+											</li>
+											<li class="d-flex align-items-start">
+												<span class="dot me-2"></span>
+												<p>Redução de custos.</p>
+											</li>
+											<li class="d-flex align-items-start">
+												<span class="dot me-2"></span>
+												<p> Resultados de desempenho.</p>
+											</li>
+											<li class="d-flex align-items-start">
+												<span class="dot me-2"></span>
+												<p>Simulação para um ou dois motoristas.</p>
+											</li>
+										
+																
+										</ul>
+									</div>	
+									
+					</div>
+			</div>
 			
-	<!-- borde -->
 	
-	<div class="container-flex border-bottom  col-md-12" style="border-bottom-color: #00a0df" ></div>	
 				
 	<!-- Servicio 3 legal -->
 	
 	<div class="container ps-md-5 pe-md-5 ps-sm-2 pe-sm-2">
-	  <div class="row  mb-2 h-100">
+	  	<div class="row  mb-2 h-100">
 			
 			<div class="col-md-6 col-sm-12 mt-4 ps-md-4 pe-md-4">
-				
-				
-				<img src="Imagen/driver_truck.jpg" class=" w-100 d-block col-md mb-3" alt="World_Police">
-				
+				<img src="Imagen/driver_truck.jpg" class=" w-100 d-block col-md mb-3" alt="World_Police">	
 			</div>
 		
 			<div class="col-md-6 col-sm-12 mt-4  ps-md-4">
-				<h1 class="fs-5 fw-bold  pb-1 text-center text-md-start" style="color:#00a0df" >CONTROLE DE JORNADA DE TRABALHO DO MOTORISTA/AJUDANTE VIA GPS - APP</h1>
+				<h2 class="fs-5 fw-bold  pb-1 text-center text-md-start">CONTROLE DE JORNADA DE TRABALHO DO MOTORISTA/AJUDANTE VIA GPS - APP</h2>
+				<div class="col-md-12 col-sm-12 mt-4  ps-md-4">
+					<ul class="list-unstyled">
 
-					<p class="text-dark"><img src="Imagen/arrow.svg" class="icon-arrow me-3" alt="Arrow"/>Registro de INÍCIO e FIM da Jornada; </p>
-					<p class="text-dark"><img src="Imagen/arrow.svg" class="icon-arrow me-3" alt="Arrow"/>Marcação de todas as atividades, como: Á DISPOSIÇÃO, CARGA, DESCARGA, FISCALIZAÇÃO, REFEIÇÃO, AUXÍLIO MECÂNICO e OUTROS;</p>	
-					<p class="text-dark"><img src="Imagen/arrow.svg" class="icon-arrow me-3" alt="Arrow"/>Marcações automáticas das atividades (a partir do GPS do equipamento móvel) quando detectado (CONDUÇÃO);</p>
-					<p class="text-dark"><img src="Imagen/arrow.svg" class="icon-arrow me-3" alt="Arrow"/>Parametrize a jornada de trabalho da sua equipe de acordo com a CLT (CONSOLIDAÇÃO DAS LEIS TRABALHISTAS) e LEI Nº 13.103/2015.</p>
-					<p class="text-dark"><img src="Imagen/arrow.svg" class="icon-arrow me-3" alt="Arrow"/>Os motoristas/ajudantes, poderão exibir às autoridades na estrada, todos os documentos inerentes ao veículo e ao próprio condutor/ajudante, diretamente no APP, pois, tudo fica armazenado no aplicativo, para eventuais fiscalizações.</p>
+						<li class="d-flex align-items-start">
+							<span class="dot me-2"></span>
+							<p>Registro de <strong style="color: #00a0df;">INÍCIO</strong> e <strong style="color: #00a0df;">FIM </strong>da Jornada; </p>
+						</li>
 
-					<p class="text-dark"><img src="Imagen/arrow.svg" class="icon-arrow me-3" alt="Arrow"/>Esta aplicação simula na totalidade um tacógrafo e inclui todos os relatórios de um tacógrafo. Pode ser usado para calcular salários.</p>
-                    	
-						<div class="row col-12 border-bottom  border-top col-md-12" style="border-bottom-color: #00a0df">
-							<div class="col-md-4 col-sm-12 mt-4 ps-md-4 pe-md-4">
-								<img src="Imagen/store.jpg" class=" w-100 d-block col-md mb-3" alt="World_Police">
-							</div>
-							<div class="col-md-8 col-sm-12 mt-4  ps-md-4">
-								<h1 class="fs-2 fw-bold pb-2" style="color: #00a0df">FÁCIL DE USAR!</h1>
-								<h1 class="fs-5 fw-bold  pb-1 text-center text-md-start" style="color:#00a0df" >BAIXE O APLICATIVO GRATUITAMENTE.</h1>
-																<h1 class="fs-5 fw-bold  pb-1 text-center text-md-start" style="color:#00a0df" >EM TODOS OS CELULARES PARA CONTROLAR TODA A SUA FROTA.</h1>
-																<h1 class="fs-5 fw-bold  pb-1 text-center text-md-start" style="color:#00a0df" >DO GOOGLE PLAY OU APP STORE.</h1> </div>
-						</div>
+						<li class="d-flex align-items-start">
+							<span class="dot me-2"></span>
+							<p><strong style="color: #00a0df;">Marcação de todas as atividades, como:</strong> Á DISPOSIÇÃO, CARGA, DESCARGA, FISCALIZAÇÃO, REFEIÇÃO, AUXÍLIO MECÂNICO e OUTROS;</p>
+
+						</li>
+						<li class="d-flex align-items-start">
+							<span class="dot me-2"></span>
+							<p><strong style="color: #00a0df;">Marcações automáticas das atividades</strong> (a partir do GPS do equipamento móvel) quando detectado (CONDUÇÃO);</p>
+						</li>
+						<li class="d-flex align-items-start">
+							<span class="dot me-2"></span>
+							<p> <strong style="color: #00a0df;">Parametrize a jornada de trabalho da sua equipe de acordo com a CLT</strong> (CONSOLIDAÇÃO DAS LEIS TRABALHISTAS) e LEI Nº 13.103/2015.</p>
+						</li>
+						<li class="d-flex align-items-start">
+							<span class="dot me-2"></span>
+							<p><strong style="color: #00a0df;">Os motoristas/ajudantes, poderão exibir às autoridades na estrada,</strong> todos os documentos inerentes ao veículo e ao próprio condutor/ajudante, diretamente no APP, pois, tudo fica armazenado no aplicativo, para eventuais fiscalizações.</p>
+						</li>
+						<li class="d-flex align-items-start">
+							<span class="dot me-2"></span>
+							<p><strong style="color: #00a0df;">Esta aplicação simula na totalidade um tacógrafo</strong> e inclui todos os relatórios de um tacógrafo. Pode ser usado para calcular salários.</p>
+						</li>
+											
+				</ul>
+				</div>		
 				
-           </div>
-    </div>
-  </div>	
+           </div>  
+    	</div>
+	</div>
 	
-	<!-- borde -->
-	
-	<div class="container-flex border-bottom  col-md-12" style="border-bottom-color: #00a0df" ></div>	
 		
 	<!-- Servicio 4 -->	
-  <div class="container mt-5 flex-row justify-content-center align-content-center p-5 pt-3">
-		<div class="row col-12">
-	
-
-						<div class="col-md-4 col-sm-12 mt-4 ps-md-4 pe-md-4">
-				
-				
-				<img src="Imagen/registroapp.png" class=" w-100 d-block col-md mb-3" alt="World_Police">
-				
-			</div>
+		<div class="container-flex mt-5 flex-row justify-content-center align-content-center bloque2">
+			<div class="row col-12">
 		
-			<div class="col-md-8 col-sm-12 mt-4  ps-md-4">
-				<h1 class="fs-5 fw-bold  pb-1 text-center text-md-start text-uppercase" style="color:#00a0df" >Seu motorista poderá registrar no próprio APP-TRUCK CONTROLLER:</h1>
+				<div class="col-md-4 col-sm-12 mt-4 ps-md-4 pe-md-4">
 
-					<p class="text-dark">É obrigatório registrar todos os eventos da sua jornada de trabalho, (motorista ou ajudante), selecionando os botões ao lado. MEIO ALTERNATIVO DE CONTROLE DE JORNADA- MINISTÉRIO DO TRABALHO E EMPREGO - PORTARIA Nº 373 DE 25.02.2011</p>
+					<img src="Imagen/registroapp.png" class=" w-100 d-block col-md mb-3" alt="Imagem do registro do dia de trabalho no aplicativo">
 					
-					
-           </div>
-           
-		</div>
-    </div>	
+				</div>
+			
+				<div class="col-md-8 col-sm-12 mt-4  ps-md-4">
+					<h1 class="fs-5 fw-bold  pb-1 text-center text-md-start text-uppercase" style="color:#00a0df">Seu motorista poderá registrar no próprio APP-TRUCK CONTROLLER:</h1>
+
+						<p class="text-dark">É obrigatório registrar todos os eventos da sua jornada de trabalho, (motorista ou ajudante), selecionando os botões ao lado. MEIO ALTERNATIVO DE CONTROLE DE JORNADA- MINISTÉRIO DO TRABALHO E EMPREGO - PORTARIA Nº 373 DE 25.02.2011</p>
+						<div class="container col-md-12   p-3" style="border-bottom-color: #00a0df; background-color: #00a0df; border-radius: 34px;">
+			
+							<div class="row mb-2 h-100 d-flex align-items-center" >
+								
+								<div class="col-md-2">
+									<a href="https://play.google.com/store/apps/details?id=com.gure&hl=es&gl=US">
+										<img src="Imagen/googlestore.png" class="w-100 d-block col-md p-1" alt="Ícone de login do Google Play">
+									  </a>
+									  <a href="https://apps.apple.com/es/app/truck-controller/id1521273337">
+										<img src="Imagen/applestore.png" class="w-100 d-block col-md p-1" alt="Ícone de login do Apple store">
+									  </a>
+								</div>
+								
+								<div class="col-md-10 col-sm-12 mt-4 ps-md-4">
+									<h2 class="fs-2 fw-bold pb-2 text-white">FÁCIL DE USAR!</h2>
+									<h1 class="fs-5 fw-bold  pb-1 text-center text-md-start text-white">BAIXE O APLICATIVO GRATUITAMENTE.</h1>
+									<h1 class="fs-5 fw-bold  pb-1 text-center text-md-start text-white">EM TODOS OS CELULARES PARA CONTROLAR TODA A SUA FROTA.</h1>
+									<h1 class="fs-5 fw-bold  pb-1 text-center text-md-start text-white">DO GOOGLE PLAY OU APP STORE.</h1> </div>
+			
+							</div>
+				</div>
+				
+				</div>
+			</div>
+		</div>	
 
 			
 	
